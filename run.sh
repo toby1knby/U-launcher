@@ -8,7 +8,7 @@ display_usage() {
     echo "This script must have arguments specifying app version, app identifier and conf file."
     echo -e "Usage: $0 [1.x.x][reverse.dns.thing][/path/to/conf] \n"
 }
-if [[ "$PROJECTFILE" = "" ]]; then
+if [[ "$projectfolder" = "" ]]; then
     display_usage
     exit 1
 fi
