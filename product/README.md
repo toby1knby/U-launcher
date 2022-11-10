@@ -1,0 +1,1 @@
+# Placeholder for "$name_of_app".app folder

@@ -1,0 +1,18 @@
+#shellcheck disable=SC2034
+#shellcheck disable=SC2148
+
+# Set values for "notarytool"
+
+devAppID=''
+devInstID=''
+appleID=''
+teamID=''
+pkgname=''
+version="$1"
+identifier="$2"
+bundle_short_version=$(basename "${1%.*}")
+projectfolder=$(find product -name "*.app")
+app=$(basename "${projectfolder%.*}")
+plist="product/$app.app/Contents/Info.plist"
+product="product/$app.app"
+keychain_profile=''
